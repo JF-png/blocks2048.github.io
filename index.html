@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Соединяй-ка - 2048</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		@font-face{
+			font-family: Inter;
+			src:url("assets/font/Inter-Bold.ttf");
+			font-weight:400;
+			font-weight: normal;
+		}
+		html, body {
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		body {
+			background-image: url('assets/png/background.png');
+			background-size: cover;
+			background-color: #000000;
+			  -webkit-touch-callout:none;
+   			 -webkit-user-select:none;
+    		-khtml-user-select:none;
+   			 -moz-user-select:none;
+   			 -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+			-webkit-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.3);
+			box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.3);
+
+		}
+		
+</style>  
+<script src = "https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    </head>
+    <div style="font-family: Inter; position: absolute;left:-1000px; visibility: hidden;">.</div>
+    <body>
+    	<script src="bundle.js"></script> 
+    	<div id="wrapper"></div>
+    	<script>
+    		var sdkReady = true;
+    		vkBridge.send('VKWebAppInit', {});
+    	</script>	
+        
+    </body>
+</html>
