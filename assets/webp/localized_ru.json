@@ -1,0 +1,41 @@
+{
+	"textures": [
+		{
+			"image": "localized_ru.webp",
+			"format": "RGBA8888",
+			"size": {
+				"w": 887,
+				"h": 1166
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "gameoverscreen",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 885,
+						"h": 1164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 885,
+						"h": 1164
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 885,
+						"h": 1164
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:e9aac49c26a0085cfef0a97f1e5a5d60:0dda060180e3efcb738cd3ea67ffa54d:c539aa6847b504b2cc5d96c453a93745$"
+	}
+}
